@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/stylesOdontosalud.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contactános</title>
+  </head>
+  <body class="fondoGeneral">
+    <div class="grid-bar">
+      <header class="header">
+        <div class="header-content">
+          <a href="../index.html"
+            ><img src="../assets/logo.png" alt="logo" width="200" height="180"
+          /></a>
+          <nav class="navigation">
+            <a href="about.html">About</a>
+            <a href="especialidades.html"> Especialidades</a>
+            <a href="turnos.html">Turnos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contactános</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+      <h1 class="titles">Contactános</h1>
+      <section class="s-contacto">
+        <div class="s-contacto-subtitle">
+          <h2 class="subtitles">
+            Envianos tu consulta en el siguiente formulario y te responderemos de
+            inmediato!
+          </h2>
+        </div>
+        <div class="s-contacto-form">
+          <form action="">
+            <label for="fullname" class="label-style">Nombre y apellido:</label>
+            <input
+              type="text"
+              name="nombre y apellido"
+              placeholder="Nombre completo"
+              id="fullname"
+            />
+            <label for="email" class="label-style">E-mail:</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="nombre@ejemplo.com"
+              id="email"
+            />
+            <label for="sexo" class="label-style">Sexo</label>
+            <select name="sexo" id="sexo">
+              <option value="">Femenino</option>
+              <option value="">Masculino</option>
+              <option value="">Otro</option>
+            </select>
+            <label for="mensaje" class="label-style">Mensaje:</label>
+            <textarea
+              name="consulta"
+              id="mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Escriba aqui su consulta"
+            >
+            </textarea>
+            <label class="label-style"
+              >Deseo recibir las novedades de la clínica por E-mail
+              <input type="checkbox" name="acepta" id="1"
+            /></label>
+            <div>
+              <input type="reset" value="Limpiar" />
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+    </section>
+    <section class="informacion">
+      <h3 class="info__centrada">E-mail: odontosalud@email.com</h3>
+      <h3 class="info__centrada">Telefóno: 28373591283</h3>
+      <h3 class="info__centrada">
+        ¡Encontranos tambien en nuetras redes sociales!
+      </h3>
+      <div>
+        <!--colocar logos linkeados de las redes sociales-->
+      </div>
+    </section>
+    <footer class="footer">
+      <ul class="footer-items">
+        <li><a href="about.html">Quienes somos</a></li>
+        <li><a href="turnos.html">Pedí tu turno</a></li>
+        <li><a href="contacto.html">Contactanos</a></li>
+      </ul>
+      <ul class="footer-items">
+        <li><a href="#">Unite a nuestro equipo</a></li>
+        <li><a href="#">Soporte técnico</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
