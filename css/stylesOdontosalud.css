@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: rgb(233, 221, 224);
+  background-color: rgb(253, 253, 253);
   width: 100%;
   overflow: auto;
 }
@@ -20,7 +20,7 @@ p {
   font-style: italic;
   font-size: 20px;
   line-height: 25px;
-  text-align: left;
+  text-align: justify;
   text-decoration: none;
   padding-left: 35px;
   padding-right: 20px;
@@ -34,10 +34,10 @@ ul {
   font-style: normal;
   font-size: 20px;
   text-decoration: none;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  /* padding-top: 30px;
+  padding-right: 50px; */
+  padding-bottom: 5px;
+  padding-left: 50px;
 }
 
 a {
@@ -54,10 +54,10 @@ a {
 nav a {
   display: flex;
   justify-content: flex-end;
-  color: white;
+  color: rgb(255, 255, 255) !important;
   padding: 10px 15px 5px 15px;
-  text-decoration: none;
-  border-right: 1px solid #bbb;
+  /* text-decoration: none;
+  border-right: 1px solid #bbb; */
 }
 
 .titles {
@@ -82,8 +82,8 @@ nav a {
   font-weight: 600;
   font-size: 30px;
   padding-left: 30px;
-  padding-bottom: 30px;
-  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 /* .parrafosEstilo {
@@ -147,16 +147,15 @@ nav a {
 
 /* SECTION TITULO SMILE HOME */
 
-.homeTitle {
+.homeTitle  {
   color: rgb(108, 117, 117);
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   font-style: normal;
-  font-weight: 400;
-  font-size: 60px;
+  font-weight: 400 !important;
+  font-size: 80px !important;
   display: grid;
   align-items: center;
-  text-shadow: 2px 2px;
 }
 
 .background-smile {
@@ -169,7 +168,7 @@ nav a {
   margin-right: 0px;
   margin-bottom: opx;
   margin-left: 0px;
-  height: 500px;
+  height: 200px;
 }
 
 .grid-section {
@@ -180,7 +179,7 @@ nav a {
   grid-template-rows: 400px;
   grid-template-areas: "section1 section1";
   width: 100%;
-  height: 600px;
+  height: 1000px;
 }
 
 .section-content {
@@ -190,11 +189,20 @@ nav a {
   justify-content: center;
   justify-items: center;
   align-items: center;
+  padding: 30px;
 }
 .item1 {
   width: 100%;
   /* grid-area: section1; */
   display: flex;
+  text-align: justify;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  
 }
 
 .item2 {
@@ -232,7 +240,7 @@ nav a {
   grid-column-start: 1;
   grid-column-end: 2;
   align-items: center;
-  width: 80%;
+  /* width: 90%; */
 }
 
 .s-history-img {
@@ -240,10 +248,12 @@ nav a {
   grid-column-start: 2;
   grid-column-end: 3;
   align-items: center;
+  align-content: flex-start;
+  transition: all 2s;
 }
 
 .s-history-img:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 /* nuestros profesionales */
@@ -253,6 +263,7 @@ nav a {
   margin-bottom: 30px;
   border-radius: 7px;
   width: 100%;
+  height: 400px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 100px 200px;
@@ -281,6 +292,8 @@ nav a {
   display: grid;
   align-content: center;
   justify-content: center;
+  transition: all 0.5s;
+  height: 100px;
 }
 
 .prof1:hover {
@@ -299,6 +312,7 @@ nav a {
   display: grid;
   align-content: center;
   justify-content: center;
+  transition: all 0.5s;
 }
 .prof2:hover {
   transform: scale(1.2);
@@ -316,6 +330,7 @@ nav a {
   display: grid;
   align-content: center;
   justify-content: center;
+  transition: all 0.5s;
 }
 .prof3:hover {
   transform: scale(1.2);
@@ -333,6 +348,7 @@ nav a {
   display: grid;
   align-content: center;
   justify-content: center;
+  transition: all 0.5s;
 }
 .prof4:hover {
   transform: scale(1.2);
@@ -348,6 +364,7 @@ nav a {
   display: grid;
   align-content: center;
   justify-content: center;
+  transition: all 0.5s;
 }
 .prof5:hover {
   transform: scale(1.2);
@@ -573,8 +590,7 @@ form label {
   background-image: linear-gradient(
     to bottom,
     rgba(182, 141, 174, 0.514),
-    white
-  );
+    rgb(247, 241, 241));
   width: 100%;
   height: 150px;
   display: grid;
@@ -582,10 +598,12 @@ form label {
   grid-template-rows: 1fr;
   justify-content: center;
   align-content: center;
+  margin-top: 50px;
 }
 
 .footer-items {
   display: grid;
   justify-content: center;
   align-content: center;
+  color:rgb(212, 188, 188); !important;
 }
