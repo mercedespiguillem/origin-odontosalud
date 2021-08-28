@@ -1,94 +1,228 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../css/stylesOdontosalud.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Turnos</title>
-</head>
-<body>
-    <div class="grid-bar">
-        <header class="header">
-            <div class="header-content">
-                <a href="../index.html"><img src="../assets/logo.png" alt="logo" width="200" height="180"/></a>
-                <nav class="navigation">
-                    <a href="about.html">About</a>
-                    <a href="especialidades.html"> Especialidades</a>
-                    <a href="turnos.html">Turnos</a>
-                    <a href="servicios.html">Servicios</a>
-                    <a href="contacto.html">Contactános</a>
-                </nav>
-            </div>
-        </header>
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACION -->
+    <header class="container-fluid header">
+      <div class="row d-flex">
+        <a class="col-3 navbar-brand" href="../index.html"
+          ><img src="../assets/logo.png" alt="logo" width="150" height="130"
+        /></a>
+        <nav
+          class="
+            row
+            col-9
+            navbar
+            d-flex
+            align-items-end
+            navbar-expand-md navbar-light
+          "
+        >
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="especialidades.html"
+                  >Especialidades</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="turnos.html">Turnos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contactános</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="container-fluid p-0">
+      <h1 class="titles">¡Solicitá tu turno!</h1>
     </div>
-    <h1 class="titles">¡Solicitá tu turno!</h1>
     <section class="s-online">
-        <div class="s-online-subtitle">  
-            <a href="turnos.html#seccion1"><h2 class="subtitles">Solicitud de turnos de manera online</h2></a>
-        </div>
-        <div class="s-online-form">
-            <form action="" method="get">
-                <legend><h4 class="label-style">Completá el siguiente formulario para solicitar tu turno:</h4></legend>
-                <label for="nombre" class="label-style">Nombre completo:</label>
-                    <input type="text" name="nombre" >
-                <label for="dni" class="label-style">Número de documento:</label>
-                    <input type="text" name="dni">
-                <label for="email" class="label-style">E-mail:</label>
-                    <input type="text" name="email">
-                </select>
-                <label class="label-style">Posee obra social/prepaga
-                    <input type="checkbox" name="si" id="1" />
-                </label>
-                <label for="dia" class="label-style">Dia</label>
-                <select name="dia" id="">
-                    <option value="">Lunes</option>
-                    <option value="">Martes</option>
-                    <option value="">Miercoles</option>
-                    <option value="">Jueves</option>
-                    <option value="">Viernes</option>
-                </select>
-                <label for="horario" class="label-style">Horario</label>
-                <select name="horario" id="">
-                    <option value="">8hs</option>
-                    <option value="">9hs</option>
-                    <option value="">10hs</option>
-                    <option value="">11hs</option>
-                    <option value="">12hs</option>
-                    <option value="">14hs</option>
-                    <option value="">15hs</option>
-                    <option value="">16hs</option>
-                    <option value="">17hs</option>
-                </select>
-                <br>
-                <br>
-                    <input type="reset" value="Limpiar formulario" />
-                    <input type="submit" value="Enviar" />
-            </form>
-        </div>
+      <div class="s-online-subtitle">
+        <a href="turnos.html#seccion1">
+          <h2 class="subtitles">Solicitud de turnos de manera online</h2></a
+        >
+      </div>
+      <div class="container-fluid s-form">
+        <form>
+          <div class="form-row form-group">
+            <div class="col">
+              <label for="formGroupExampleInput">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="col">
+              <label for="formGroupExampleInput2">Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Apellido"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Número de documento</label>
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput"
+              placeholder="dni"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.   com"
+            />
+          </div>
+          <div class="form-row form-group">
+            <div class="col">
+              <label for="exampleFormControlSelect1">Dia</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Lunes</option>
+                <option>Martes</option>
+                <option>Miercoles</option>
+                <option>Jueves</option>
+                <option>Viernes</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="exampleFormControlSelect1">Horario</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>8hs</option>
+                <option>9hs</option>
+                <option>10hs</option>
+                <option>11hs</option>
+                <option>12hs</option>
+                <option>14hs</option>
+                <option>15hs</option>
+                <option>16hs</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck"
+                >Obra social/prepaga</label
+              >
+            </div>
+          </div>
+          <button type="submit" class="btn btn-info">Enviar</button>
+        </form>
+      </div>
     </section>
-    <section class="s-presencial">
-        <a href="turnos.html#seccion2"><h2 class="subtitles">Solicitud de turnos de manera presencial</h2></a>
+    <div class="row">
+      <section class="row s-presencial">
+        <a href="turnos.html#seccion2"
+          ><h2 class="text-center subtitles">
+            Solicitud de turnos de manera presencial
+          </h2></a
+        >
         <div>
-            <h5 id="seccion2" class="info">Nos encontramos en la calle Colón 1715 esquina Lavalle, San Luis Capital. <br> Telefono de contacto: 266-213455 <br> WhatsApp: 2664-768955
-            <a href="#"> <br> Ver en el mapa</a></h5>
+          <h5 id="seccion2" class="text-center info s-form">
+            Nos encontramos en la calle Colón 1715 esquina Lavalle, San Luis.
+            <br />Telefono de contacto: 266-213455 <br />WhatsApp: 2664-768955
+          </h5>
         </div>
-    </section>
-    <footer class="footer">
-        <ul class="footer-items">
-            <li><a href="about.html">Quienes somos</a></li>
-            <li><a href="turnos.html">Pedí tu turno</a></li>
-            <li><a href="contacto.html">Contactanos</a></li>
-        </ul>
-        <ul class="footer-items">
-            <li><a href="#">Unite a nuestro equipo</a></li>
-            <li><a href="#">Soporte técnico</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-        </ul>
+      </section>
+    </div>
+    <footer
+      class="
+        container-fluid
+        d-flex
+        justify-content-around
+        align-items-center
+        footer
+      "
+    >
+      <ul
+        class="
+          flex-column
+          justify-content-center
+          align-items-center
+          footer__items
+        "
+      >
+        <li><a href="about.html">Quienes somos</a></li>
+        <li><a href="turnos.html">Pedí tu turno</a></li>
+        <li><a href="contacto.html">Contactanos</a></li>
+      </ul>
+      <ul class="flex-column align-items-center footer__items">
+        <li><a href="#">Unite a nuestro equipo</a></li>
+        <li><a href="#">Soporte técnico</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+      </ul>
     </footer>
-    </footer>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
