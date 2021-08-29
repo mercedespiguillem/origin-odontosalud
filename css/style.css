@@ -1,28 +1,23 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  font-size: 62, 5%;
-}
+  font-size: 62, 5%; }
 
 body {
   background-color: #fdfdfd;
   width: 100%;
-  overflow: auto;
-}
+  overflow: auto; }
 
 nav {
   display: flex;
-  justify-content: flex-end;
-}
-nav a {
-  color: white !important;
-  padding: 10px 15px 5px 15px;
-  font-size: 1.2rem;
-}
+  justify-content: flex-end; }
+  nav a {
+    color: white !important;
+    padding: 10px 15px 5px 15px;
+    font-size: 1.2rem; }
 
 a {
   color: #035050;
@@ -32,17 +27,14 @@ a {
   font-style: normal;
   font-size: 1.2rem;
   padding-left: 10px;
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
 ul {
   list-style-type: none;
   padding-bottom: 5px;
-  padding-left: 50px;
-}
-ul li {
-  color: #034444;
-}
+  padding-left: 50px; }
+  ul li {
+    color: #034444; }
 
 p {
   color: rgba(73, 72, 72, 0.884);
@@ -55,8 +47,7 @@ p {
   padding-left: 35px;
   padding-right: 20px;
   line-height: 27px;
-  padding: 2rem;
-}
+  padding: 2rem; }
 
 .titles {
   color: #449d9a;
@@ -67,8 +58,7 @@ p {
   background-size: contain;
   margin: 0px;
   padding-top: 10px;
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 .subtitles {
   color: #3f8680;
@@ -76,36 +66,54 @@ p {
   font-weight: 600;
   font-size: 1.8rem;
   margin: 1rem;
-  text-shadow: 2px 2px 2px #cbf8f8;
-}
+  text-shadow: 2px 2px 2px #cbf8f8; }
 
 .subtitles__left {
   width: 100%;
   padding: 3rem;
-  text-align: left;
-}
+  text-align: left; }
 
 .subtitles__center {
   width: 100%;
   padding: 3rem;
-  text-align: center;
-}
+  text-align: center; }
+
+.info {
+  background-color: rgba(144, 173, 173, 0.712);
+  color: #037062;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: none;
+  padding: 5%;
+  border-radius: 7px; }
 
 /* HEADER */
 .header {
-  background-color: #449d9a;
-}
-.header .header__logo {
-  width: 150px;
-  height: 130px;
-}
-.header .header__content {
+  background-color: #449d9a; }
+  .header .header__logo {
+    width: 150px;
+    height: 130px; }
+  .header .header__content {
+    width: 100%;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start; }
+
+/* FOOTER */
+.footer {
+  background-color: rgba(182, 141, 174, 0.342);
+  background-image: linear-gradient(to top, rgba(182, 141, 174, 0.514), #f7f1f1);
   width: 100%;
-  padding-bottom: 5px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
+  height: 150px;
+  padding-top: 20px;
+  margin-top: 50px; }
+
+.footer__items {
+  text-decoration: none;
+  font-size: 7px; }
 
 /* nuestros profesionales */
 .prof {
@@ -119,33 +127,44 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 5px;
-}
+  margin: 5px; }
 
 .prof:hover {
-  transform: scale(1.2);
-}
+  transform: scale(1.2); }
 
 .s-instalaciones-imagen {
   width: 800px;
-  height: 600px;
-}
+  height: 600px; }
 
-/* FOOTER */
-.footer {
-  background-color: rgba(182, 141, 174, 0.342);
-  background-image: linear-gradient(
-    to top,
-    rgba(182, 141, 174, 0.514),
-    #f7f1f1
-  );
-  width: 100%;
-  height: 150px;
-  padding-top: 20px;
-  margin-top: 50px;
-}
+.section__servicios {
+  display: flex;
+  flex-direction: row;
+  height: 600px; }
 
-.footer__items {
-  text-decoration: none;
-  font-size: 7px;
-}
+.section__background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-top: 2rem;
+  border-radius: 25px; }
+
+.radiografias-img {
+  background-image: url(../assets/radiografias.jpeg); }
+
+.tomografias-img {
+  background-image: url(../assets/tomografias.jpeg); }
+
+.margen-1 {
+  margin: 2px; }
+
+.margen-2 {
+  margin: 4px; }
+
+.margen-3 {
+  margin: 6px; }
+
+.margen-4 {
+  margin: 8px; }
+
+.margen-5 {
+  margin: 10px; }

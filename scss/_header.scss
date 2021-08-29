@@ -1,0 +1,16 @@
+/* HEADER */
+
+.header {
+  background-color: $color-header;
+  .header__logo {
+    width: 150px;
+    height: 130px;
+  }
+  .header__content {
+    width: 100%;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+}

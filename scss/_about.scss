@@ -1,0 +1,25 @@
+/* nuestros profesionales */
+
+.prof {
+  height: 100px;
+  background-color: rgba(196, 171, 192, 0.473);
+  border: 1px solid rgb(211, 133, 194);
+  border-radius: 10px;
+  transition: all 0.5s;
+  color: #449d9a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+}
+.prof:hover {
+  transform: scale(1.2);
+}
+
+// nuestras instalaciones
+
+.s-instalaciones-imagen {
+  width: 800px;
+  height: 600px;
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  background-color: $fondo-body;
+  width: 100%;
+  overflow: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    color: rgb(255, 255, 255) !important;
+    padding: 10px 15px 5px 15px;
+    font-size: 1.2rem;
+  }
+}
+
+a {
+  color: rgb(3, 80, 80);
+  text-decoration: none;
+  font-family: $fuente-general;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  li {
+    color: rgb(3, 68, 68);
+  }
+}
+
+p {
+  color: rgba(73, 72, 72, 0.884);
+  font-family: $fuente-general;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: justify;
+  text-decoration: none;
+  padding-left: 35px;
+  padding-right: 20px;
+  line-height: 27px;
+  padding: 2rem;
+}
+
+.titles {
+  color: $color-font-titles;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(182, 141, 174, 0.514);
+  background-size: contain;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subtitles {
+  color: $color-subtitles;
+  font-family: $fuente-general;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 1rem;
+  text-shadow: 2px 2px 2px #cbf8f8;
+}
+
+.subtitles__left {
+  width: 100%;
+  padding: 3rem;
+  text-align: left;
+}
+
+.subtitles__center {
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+}
+
+.info {
+  background-color: rgba(144, 173, 173, 0.712);
+  color: $color-info;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: none;
+  padding: 5%;
+  border-radius: 7px;
+}
