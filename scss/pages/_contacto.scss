@@ -1,0 +1,19 @@
+/* CONTACTO */
+
+.contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.s-form {
+  background-color: rgba(139, 175, 175, 0.562);
+  padding: 3rem;
+  border-radius: 10px;
+  margin-bottom: 1%;
+}

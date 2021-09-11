@@ -41,11 +41,12 @@ ul {
   padding-left: 50px;
   li {
     color: rgb(3, 68, 68);
+    font-size: 1.2rem;
   }
 }
 
 p {
-  color: rgba(73, 72, 72, 0.884);
+  color: $color-parrafos;
   font-family: $fuente-general;
   font-weight: 500;
   font-style: italic;
@@ -58,12 +59,16 @@ p {
   padding: 2rem;
 }
 
+.row {
+  margin: 0%;
+}
+
 .titles {
   color: $color-font-titles;
-  font-size: 2.5rem;
+  font-size: $font-size-titles;
   font-weight: 600;
   text-align: center;
-  background-color: rgba(182, 141, 174, 0.514);
+  background-color: $color-background-titles;
   background-size: contain;
   margin: 0px;
   padding-top: 10px;
@@ -92,12 +97,11 @@ p {
 }
 
 .info {
-  background-color: rgba(144, 173, 173, 0.712);
+  background-color: $background-info;
   color: $color-info;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
-  font-style: italic;
   text-decoration: none;
   padding: 5%;
   border-radius: 7px;

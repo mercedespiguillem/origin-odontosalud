@@ -34,7 +34,8 @@ ul {
   padding-bottom: 5px;
   padding-left: 50px; }
   ul li {
-    color: #034444; }
+    color: #034444;
+    font-size: 1.2rem; }
 
 p {
   color: rgba(73, 72, 72, 0.884);
@@ -49,9 +50,12 @@ p {
   line-height: 27px;
   padding: 2rem; }
 
+.row {
+  margin: 0%; }
+
 .titles {
   color: #449d9a;
-  font-size: 2.5rem;
+  font-size: 2, 5rem;
   font-weight: 600;
   text-align: center;
   background-color: rgba(182, 141, 174, 0.514);
@@ -84,7 +88,6 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
-  font-style: italic;
   text-decoration: none;
   padding: 5%;
   border-radius: 7px; }
@@ -112,8 +115,9 @@ p {
   margin-top: 50px; }
 
 .footer__items {
+  font-size: 1.2rem;
   text-decoration: none;
-  font-size: 7px; }
+  text-align: center; }
 
 /* nuestros profesionales */
 .prof {
@@ -132,7 +136,7 @@ p {
 .prof:hover {
   transform: scale(1.2); }
 
-.s-instalaciones-imagen {
+.instalaciones__img {
   width: 800px;
   height: 600px; }
 
@@ -149,10 +153,110 @@ p {
   border-radius: 25px; }
 
 .radiografias-img {
-  background-image: url(../assets/radiografias.jpeg); }
+  background-image: url(../assets/radiografias.jpeg);
+  border-radius: 10px; }
 
 .tomografias-img {
-  background-image: url(../assets/tomografias.jpeg); }
+  background-image: url(../assets/tomografias.jpeg);
+  border-radius: 10px; }
+
+/* CONTACTO */
+.contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
+
+.s-form {
+  background-color: rgba(139, 175, 175, 0.562);
+  padding: 3rem;
+  border-radius: 10px;
+  margin-bottom: 1%; }
+
+/*  ESPECIALIDADES */
+.especialidades {
+  /* background-color: rgba(207, 205, 207, 0.397); */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  width: 100%;
+  padding: 3rem; }
+
+.especialidades__esp {
+  background-image: url(../assets/esp.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: rgba(196, 171, 192, 0.473);
+  border: 1px solid #d385c2;
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem; }
+
+.s-form {
+  background-color: rgba(139, 175, 175, 0.562);
+  padding: 3rem;
+  border-radius: 10px; }
+
+.s-presencial {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+/* INDEX */
+/* SECTION TITULO SMILE HOME */
+.index__title {
+  color: rgba(71, 80, 80, 0.849);
+  text-align: center;
+  font-family: "Kaushan Script", cursive !important;
+  text-shadow: 2px 2px 5px #ecf3f3;
+  font-size: 3rem; }
+
+.index__background {
+  background-image: url(../assets/sonrisa2.png);
+  background-repeat: no-repeat;
+  background-color: beige;
+  background-position: center;
+  background-size: 100%;
+  margin-top: 1px;
+  margin-right: 0px;
+  margin-bottom: opx;
+  margin-left: 0px;
+  height: 200px; }
+
+.index__content {
+  background-color: #449d9a44;
+  width: 100%;
+  padding: 5rem;
+  margin-bottom: 2rem; }
+
+.index__text {
+  font-weight: 500;
+  font-style: italic;
+  line-height: 27px;
+  text-decoration: none;
+  padding: 2rem; }
+
+@media screen and (max-width: 760px) {
+  a {
+    font-size: 1rem; } }
 
 .margen-1 {
   margin: 2px; }

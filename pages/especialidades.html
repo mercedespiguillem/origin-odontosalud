@@ -34,30 +34,24 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../css/stylesOdontosalud.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <title>Especialidades</title>
   </head>
   <body>
     <!-- BARRA DE NAVEGACION -->
     <header class="container-fluid header">
-      <div class="row d-flex">
-        <a class="col-3 navbar-brand" href="../index.html"
+      <div class="row d-flex align-items-center justify-content-around">
+        <a class="navbar-brand" href="../index.html"
           ><img src="../assets/logo.png" alt="logo" width="150" height="130"
         /></a>
-        <nav
-          class="
-            row
-            col-9
-            navbar
-            d-flex
-            align-items-end
-            navbar-expand-md navbar-light
-          "
-        >
-          <div
-            class="collapse navbar-collapse d-flex justify-content-end"
-            id="navbarNav"
-          >
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -79,6 +73,26 @@
             </ul>
           </div>
         </nav>
+        <div class="dropdown show d-md-none h-100">
+          <a
+            class="fas fa-bars btn btn-light"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          ></a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="about.html">About</a>
+            <a class="dropdown-item" href="especialidades.html"
+              >Especialidades</a
+            >
+            <a class="dropdown-item" href="turnos.html">Turnos</a>
+            <a class="dropdown-item" href="servicios.html">Servicios</a>
+            <a class="dropdown-item" href="contacto.html">Contacto</a>
+          </div>
+        </div>
       </div>
     </header>
     <!-- ESPECIALIDADES -->
@@ -88,19 +102,19 @@
     <section
       class="container-fluid row d-flex justify-content-center especialidades"
     >
-      <div class="col-6 col-md-3 esp">
+      <div class="col-6 col-md-3 especialidades__esp">
         <h6 class="p-30 subtitles">Cirugía e implantes</h6>
       </div>
-      <div class="col-6 col-md-3 esp">
+      <div class="col-6 col-md-3 especialidades__esp">
         <h6 class="subtitles">Endodoncia</h6>
       </div>
-      <div class="col-6 col-md-3 esp">
+      <div class="col-6 col-md-3 especialidades__esp">
         <h6 class="subtitles">Estética dental</h6>
       </div>
-      <div class="col-6 col-md-3 esp">
-        <h6 class="subtitles">Rehabilitación</h6>
+      <div class="col-6 col-md-3 especialidades__esp">
+        <h6 class="subtitles">Operatoria</h6>
       </div>
-      <div class="col-6 col-md-3 esp">
+      <div class="col-6 col-md-3 especialidades__esp">
         <h6 class="subtitles">Periodoncia</h6>
       </div>
     </section>

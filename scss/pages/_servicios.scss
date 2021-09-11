@@ -15,5 +15,6 @@
 @each $imagen-fondo in radiografias, tomografias {
   .#{$imagen-fondo}-img {
     background-image: url(../assets/#{$imagen-fondo}.jpeg);
+    border-radius: 10px;
   }
 }

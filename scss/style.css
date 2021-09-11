@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #6b1212;
+  background-color: #fdfdfd;
   width: 100%;
   overflow: auto;
 }
@@ -20,8 +20,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 nav a {
@@ -49,6 +49,7 @@ ul {
 
 ul li {
   color: #034444;
+  font-size: 1.2rem;
 }
 
 p {
@@ -65,9 +66,13 @@ p {
   padding: 2rem;
 }
 
+.row {
+  margin: 0%;
+}
+
 .titles {
   color: #449d9a;
-  font-size: 2.5rem;
+  font-size: 2, 5rem;
   font-weight: 600;
   text-align: center;
   background-color: rgba(182, 141, 174, 0.514);
@@ -98,6 +103,17 @@ p {
   text-align: center;
 }
 
+.info {
+  background-color: rgba(144, 173, 173, 0.712);
+  color: #037062;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5%;
+  border-radius: 7px;
+}
+
 /* HEADER */
 .header {
   background-color: #449d9a;
@@ -115,11 +131,28 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* FOOTER */
+.footer {
+  background-color: rgba(182, 141, 174, 0.342);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(182, 141, 174, 0.514)), to(#f7f1f1));
+  background-image: linear-gradient(to top, rgba(182, 141, 174, 0.514), #f7f1f1);
+  width: 100%;
+  height: 150px;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+.footer__items {
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* nuestros profesionales */
@@ -135,48 +168,208 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   margin: 5px;
 }
 
 .prof:hover {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-.s-instalaciones-imagen {
+.instalaciones__img {
   width: 800px;
   height: 600px;
 }
 
-/* FOOTER */
-.footer {
-  background-color: rgba(182, 141, 174, 0.342);
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(rgba(182, 141, 174, 0.514)),
-    to(#f7f1f1)
-  );
-  background-image: linear-gradient(
-    to top,
-    rgba(182, 141, 174, 0.514),
-    #f7f1f1
-  );
-  width: 100%;
-  height: 150px;
-  padding-top: 20px;
-  margin-top: 50px;
+.section__servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 600px;
 }
 
-.footer__items {
+.section__background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-top: 2rem;
+  border-radius: 25px;
+}
+
+.radiografias-img {
+  background-image: url(../assets/radiografias.jpeg);
+  border-radius: 10px;
+}
+
+.tomografias-img {
+  background-image: url(../assets/tomografias.jpeg);
+  border-radius: 10px;
+}
+
+/* CONTACTO */
+.contacto {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.s-form {
+  background-color: rgba(139, 175, 175, 0.562);
+  padding: 3rem;
+  border-radius: 10px;
+  margin-bottom: 1%;
+}
+
+/*  ESPECIALIDADES */
+.especialidades {
+  /* background-color: rgba(207, 205, 207, 0.397); */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  width: 100%;
+  padding: 3rem;
+}
+
+.especialidades__esp {
+  background-image: url(../assets/esp.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: rgba(196, 171, 192, 0.473);
+  border: 1px solid #d385c2;
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.s-form {
+  background-color: rgba(139, 175, 175, 0.562);
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.s-presencial {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+/* INDEX */
+/* SECTION TITULO SMILE HOME */
+.index__title {
+  color: rgba(71, 80, 80, 0.849);
+  text-align: center;
+  font-family: "Kaushan Script", cursive !important;
+  text-shadow: 2px 2px 5px #ecf3f3;
+  font-size: 3rem;
+}
+
+.index__background {
+  background-image: url(../assets/sonrisa2.png);
+  background-repeat: no-repeat;
+  background-color: beige;
+  background-position: center;
+  background-size: 100%;
+  margin-top: 1px;
+  margin-right: 0px;
+  margin-bottom: opx;
+  margin-left: 0px;
+  height: 200px;
+}
+
+.index__content {
+  background-color: #449d9a44;
+  width: 100%;
+  padding: 5rem;
+  margin-bottom: 2rem;
+}
+
+.index__text {
+  font-weight: 500;
+  font-style: italic;
+  line-height: 27px;
   text-decoration: none;
-  font-size: 7px;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 760px) {
+  a {
+    font-size: 1rem;
+  }
+}
+
+.margen-1 {
+  margin: 2px;
+}
+
+.margen-2 {
+  margin: 4px;
+}
+
+.margen-3 {
+  margin: 6px;
+}
+
+.margen-4 {
+  margin: 8px;
+}
+
+.margen-5 {
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+/* INDEX */
+
+/* SECTION TITULO SMILE HOME */
+
+.index__title {
+  color: rgba(71, 80, 80, 0.849);
+  text-align: center;
+  font-family: "Kaushan Script", cursive !important;
+  text-shadow: 2px 2px 5px #ecf3f3;
+  font-size: 3rem;
+}
+
+.index__background {
+  background-image: url(../assets/sonrisa2.png);
+  background-repeat: no-repeat;
+  background-color: beige;
+  background-position: center;
+  background-size: 100%;
+  margin-top: 1px;
+  margin-right: 0px;
+  margin-bottom: opx;
+  margin-left: 0px;
+  height: 200px;
+}
+
+.index__content {
+  background-color: #449d9a44;
+  width: 100%;
+  padding: 5rem;
+  margin-bottom: 2rem;
+}
+.index__text {
+  font-weight: 500;
+  font-style: italic;
+  line-height: 27px;
+  text-decoration: none;
+  padding: 2rem;
+}

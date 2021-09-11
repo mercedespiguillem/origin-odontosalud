@@ -1,9 +1,19 @@
 @import "./variables";
 @import "./global";
-@import "./header";
-@import "./footer";
-@import "./about";
-@import "./servicios";
+@import "./componentes/header";
+@import "./componentes/footer";
+@import "./pages/about";
+@import "./pages/servicios";
+@import "./pages/contacto";
+@import "./pages/especialidades";
+@import "./pages/turnos";
+@import "./pages/index";
+
+@media screen and (max-width: 760px) {
+  a {
+    font-size: 1rem;
+  }
+}
 
 @for $numero from 1 through 5 {
   .margen-#{$numero} {

@@ -1,0 +1,27 @@
+/*  ESPECIALIDADES */
+
+.especialidades {
+  /* background-color: rgba(207, 205, 207, 0.397); */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  width: 100%;
+  padding: 3rem;
+}
+
+.especialidades__esp {
+  background-image: url(../assets/esp.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: rgba(196, 171, 192, 0.473);
+  border: 1px solid rgb(211, 133, 194);
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
