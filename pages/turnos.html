@@ -73,9 +73,9 @@
             </ul>
           </div>
         </nav>
-        <div class="dropdown show d-md-none h-100">
+        <div class="dropdown dropleft show d-md-none h-100">
           <a
-            class="fas fa-bars btn btn-light"
+            class="fas fa-bars btn"
             href="#"
             role="button"
             id="dropdownMenuLink"
@@ -119,22 +119,24 @@
                   />
                 </div>
                 <div class="col">
-                  <label for="formGroupExampleInput2">Apellido</label>
+                  <label for="formGroupExampleInput2" required>Apellido</label>
                   <input
                     type="text"
                     class="form-control"
                     id="formGroupExampleInput2"
                     placeholder="Apellido"
+                    required
                   />
                 </div>
               </div>
               <div class="form-group">
                 <label for="formGroupExampleInput">Número de documento</label>
                 <input
-                  type="text"
+                  type="number"
                   class="form-control"
                   id="formGroupExampleInput"
                   placeholder="Numero de documento"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -144,6 +146,7 @@
                   class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="name@example.com"
+                  required
                 />
               </div>
               <div class="form-row form-group">

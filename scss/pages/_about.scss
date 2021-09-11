@@ -17,9 +17,10 @@
   transform: scale(1.2);
 }
 
-// nuestras instalaciones
+// CARRUSELES
 
 .instalaciones__img {
   width: 800px;
   height: 600px;
+  object-fit: contain;
 }

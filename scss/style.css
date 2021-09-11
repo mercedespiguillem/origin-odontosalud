@@ -138,6 +138,13 @@ p {
           justify-content: flex-start;
 }
 
+.boton {
+  background-color: #3f8680;
+  border-color: #061312;
+  -webkit-box-shadow: 0 0 0 0.2rem #d3dddc;
+          box-shadow: 0 0 0 0.2rem #d3dddc;
+}
+
 /* FOOTER */
 .footer {
   background-color: rgba(182, 141, 174, 0.342);
@@ -185,6 +192,8 @@ p {
 .instalaciones__img {
   width: 800px;
   height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .section__servicios {
