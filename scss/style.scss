@@ -15,8 +15,16 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .subtitles {
+    font-size: 1.4rem;
+  }
+}
+
 @for $numero from 1 through 5 {
   .margen-#{$numero} {
     margin: 2px * $numero;
   }
 }
+
+

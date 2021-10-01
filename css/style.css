@@ -100,10 +100,15 @@ p {
     height: 130px; }
   .header .header__content {
     width: 100%;
-    padding-bottom: 5px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start; }
+    padding-bottom: 5px; }
+
+a#dropdownMenuLink {
+  color: rgba(19, 109, 101, 0.993);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(19, 109, 101, 0.03972); }
+
+.dropdown-item:hover {
+  background-color: #449d9ab6 !important; }
 
 /* FOOTER */
 .footer {
@@ -111,8 +116,9 @@ p {
   background-image: linear-gradient(to top, rgba(182, 141, 174, 0.514), #f7f1f1);
   width: 100%;
   height: 150px;
-  padding-top: 20px;
-  margin-top: 50px; }
+  padding-top: 3rem;
+  margin-top: 4rem;
+  padding-bottom: 3rem; }
 
 .footer__items {
   font-size: 1.2rem;
@@ -121,44 +127,15 @@ p {
 
 /* nuestros profesionales */
 .prof {
-  height: 100px;
-  background-color: rgba(196, 171, 192, 0.473);
-  border: 1px solid #d385c2;
-  border-radius: 10px;
-  transition: all 0.5s;
-  color: #449d9a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 5px; }
+  transition: all 0.5s; }
 
 .prof:hover {
-  transform: scale(1.2); }
+  transform: scale(1.1); }
 
 .instalaciones__img {
   width: 800px;
-  height: 600px; }
-
-.section__servicios {
-  display: flex;
-  flex-direction: row;
-  height: 600px; }
-
-.section__background {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  margin-top: 2rem;
-  border-radius: 25px; }
-
-.radiografias-img {
-  background-image: url(../assets/radiografias.jpeg);
-  border-radius: 10px; }
-
-.tomografias-img {
-  background-image: url(../assets/tomografias.jpeg);
-  border-radius: 10px; }
+  height: 600px;
+  object-fit: contain; }
 
 /* CONTACTO */
 .contacto {
@@ -179,7 +156,6 @@ p {
 
 /*  ESPECIALIDADES */
 .especialidades {
-  /* background-color: rgba(207, 205, 207, 0.397); */
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 7px;
@@ -193,8 +169,8 @@ p {
   background-size: 100%;
   background-color: rgba(196, 171, 192, 0.473);
   border: 1px solid #d385c2;
-  height: 100px;
-  width: 200px;
+  height: 8rem;
+  width: 10rem;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -211,8 +187,8 @@ p {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  padding-top: 2%;
-  padding-bottom: 1%;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -257,6 +233,10 @@ p {
 @media screen and (max-width: 760px) {
   a {
     font-size: 1rem; } }
+
+@media screen and (max-width: 480px) {
+  .subtitles {
+    font-size: 1.4rem; } }
 
 .margen-1 {
   margin: 2px; }

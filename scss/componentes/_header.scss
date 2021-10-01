@@ -9,14 +9,15 @@
   .header__content {
     width: 100%;
     padding-bottom: 5px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
   }
 }
 
-.boton {
-  background-color: rgb(63, 134, 128);
-  border-color: rgb(6, 19, 18);
-  box-shadow: 0 0 0 0.2rem rgb(211, 221, 220);
+a#dropdownMenuLink {
+  color: rgba(19, 109, 101, 0.993);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(19, 109, 101, 0.993/ 25%);
+}
+
+.dropdown-item:hover {
+  background-color: #449d9ab6 !important;
 }

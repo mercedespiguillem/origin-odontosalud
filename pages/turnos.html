@@ -55,9 +55,17 @@
   <body>
     <!-- BARRA DE NAVEGACION -->
     <header class="container-fluid header">
-      <div class="row d-flex align-items-center justify-content-around">
+      <div
+        class="
+          row
+          d-flex
+          align-items-center
+          justify-content-around
+          header__content
+        "
+      >
         <a class="navbar-brand" href="../index.html"
-          ><img src="../assets/logo.png" alt="logo" width="150" height="130"
+          ><img src="../assets/logo.png" alt="logo" class="header__logo"
         /></a>
         <nav class="navbar navbar-expand-md navbar-light">
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -125,6 +133,7 @@
                     class="form-control"
                     id="formGroupExampleInput"
                     placeholder="Nombre"
+                    required
                   />
                 </div>
                 <div class="col">
@@ -199,18 +208,20 @@
             </form>
           </div>
         </div>
-        <aside class="col col-md-4 align-items-stretch s-presencial">
-          <a href="turnos.html#seccion2"
-            ><h2 class="text-center subtitles">
-              Solicitud de turnos de manera presencial
-            </h2></a
-          >
-          <h5 id="seccion2" class="text-center info s-form">
-            Nos encontramos en la calle Colón 1715 esquina Lavalle. <br />
-            San Luis, Capital. <br />Telefono: 266-213455 <br />WhatsApp:
-            2664-768955
-          </h5>
-        </aside>
+        <div class="col col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title subtitles text-center">
+                Solicitud de turnos presencial
+              </h5>
+              <p class="card-text text-center">
+                Nos encontramos en la calle Colón 1715 esquina Lavalle. <br />
+                San Luis, Capital. <br />Telefono: 266-213455 <br />WhatsApp:
+                2664-768955
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer

@@ -55,9 +55,17 @@
   <body>
     <!-- BARRA DE NAVEGACION -->
     <header class="container-fluid header">
-      <div class="row d-flex align-items-center justify-content-around">
+      <div
+        class="
+          row
+          d-flex
+          align-items-center
+          justify-content-around
+          header__content
+        "
+      >
         <a class="navbar-brand" href="../index.html"
-          ><img src="../assets/logo.png" alt="logo" width="150" height="130"
+          ><img src="../assets/logo.png" alt="logo" class="header__logo"
         /></a>
         <nav class="navbar navbar-expand-md navbar-light">
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -108,55 +116,34 @@
       <h1 class="titles">Otros servicios</h1>
     </div>
     <section class="container">
-      <div
-        class="
-          row
-          d-flex
-          justify-content-around
-          align-items-start
-          h-100
-          section__servicios
-        "
-      >
-        <div class="col col-md-6 mb-20">
-          <h2 class="text-center subtitles">Radiografías</h2>
-          <div
-            class="
-              col-12
-              d-flex
-              flex-column
-              justify-content-center
-              mb-50
-              rounded
-              section__background
-              radiografias-img
-            "
-          >
-            <h3 class="info margen-5">
+      <div class="card-deck">
+        <div class="card mt-5 mb-3">
+          <img
+            class="card-img-top"
+            src="../assets/radiografias.jpeg"
+            alt="Radiografo"
+          />
+          <div class="card-body">
+            <h5 class="card-title subtitles text-center">Radiografías</h5>
+            <p class="card-text text-center">
               Dias y horarios: Lunes a viernes de 9hs a 12hs y de 14hs a 18hs.
               <br />
-              Solicitá tu turno de manera online en la seccion turnos!
-            </h3>
+              ¡Solicitá tu turno de manera online en la seccion turnos!
+            </p>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <h2 class="text-center subtitles">Tomografías</h2>
-          <div
-            class="
-              col-12
-              d-flex
-              flex-column
-              justify-content-center
-              h-100
-              rounded
-              section__background
-              tomografias-img
-            "
-          >
-            <h3 class="info margen-5">
+        <div class="card mt-5 mb-3">
+          <img
+            class="card-img-top"
+            src="../assets/tomografias.jpeg"
+            alt="Tomografo"
+          />
+          <div class="card-body">
+            <h5 class="card-title subtitles text-center">Tomografías</h5>
+            <p class="card-text text-center">
               Dias y horarios: lunes, miercoles y viernes de 8hs a 13hs. <br />
-              Solicitá tu turno de manera online en la seccion turnos!
-            </h3>
+              ¡Solicitá tu turno de manera online en la seccion turnos!
+            </p>
           </div>
         </div>
       </div>

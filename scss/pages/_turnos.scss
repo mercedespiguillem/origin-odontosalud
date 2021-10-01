@@ -1,19 +1,5 @@
 .s-form {
-  background-color: rgba(139, 175, 175, 0.562);
+  background-color: $background-color-s-form;
   padding: 3rem;
   border-radius: 10px;
-}
-
-.s-presencial {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  padding-top: 2%;
-  padding-bottom: 1%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
 }

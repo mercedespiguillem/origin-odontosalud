@@ -58,11 +58,10 @@
   <body>
     <!-- BARRA DE NAVEGACION -->
     <header class="container-fluid header">
-      <div class="row d-flex align-items-center justify-content-around">
+      <div class="row d-flex align-items-center justify-content-around header__content">
         <a class="navbar-brand" href="../index.html"
-          ><img src="../assets/logo.png" alt="logo" width="150" height="130"
-        /></a>
-        <nav class="navbar navbar-expand-md navbar-light">
+          ><img src="../assets/logo.png" alt="logo" class="header__logo"/></a>
+        <nav class="navbar navbar-expand-md">
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -126,7 +125,7 @@
             ofrecemos tratamientos de calidad y atención personalizada.
           </p>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 d-flex align-items-center">
           <img
             src="../assets/imagenchicosonriendo.jpg"
             alt="Imagen paciente"
@@ -136,72 +135,106 @@
       </section>
     </div>
   <!-- PROFESIONALES -->
-    <div class="container-fluid">
+    <section class="container-fluid">
       <div class="row">
         <h2 class="col-12 subtitles subtitles__center">
           Nuestro equipo de profesionales
         </h2>
       </div>
       <div class="container-fluid row d-flex justify-content-center">
-        <div class="col-5 col-md-2 prof">
-          <a href="#">Od. Agustin Guerra</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="../assets/micaela vasquez.jfif" alt="Foto odontóloga Micaela Vasquez">
+            <div class="card-body">
+              <h5 class="card-title text-center subtitles">Od. Micaela Vasquez</h5>
+              <p class="card-text text-center">Especialista en operatoria y estética dental</p>
+            </div>
+          </div> 
         </div>
-        <div class="col-5 col-md-2 prof">
-          <a href="#">Od. Micaela Vasquez</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+              <img class="card-img-top" src="../assets/pablo dominguez.jfif" alt="Foto Odontólogo Pablo Dominguez">
+              <div class="card-body">
+                <h5 class="card-title text-center subtitles">Od. Pablo Dominguez</h5>
+                <p class="card-text text-center">Especialista en periodoncia y endodoncia</p>
+              </div>
+          </div>
         </div>
-        <div class="col-5 col-md-2 prof">
-          <a href="#">Od. Romina Farrero</a>
-        </div>
-        <div class="col-5 col-md-2 prof">
-          <a href="#">Od. Pablo Dominguez</a>
-        </div>
-        <div class="col-5 col-md-2 prof">
-          <a href="#">Od. Eliseo Rios</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+                <img class="card-img-top" src="../assets/eliseo rios.jfif" alt="Foto Odontólogo Eliseo Rodriguez">
+                <div class="card-body">
+                  <h5 class="card-title text-center subtitles">Od. Eliseo Rodriguez</h5>
+                  <p class="card-text text-center">Especialista en cirugía, implantes y rehabilitación</p>
+                </div>
+          </div>
         </div>
       </div>
-      <!-- INSTALACIONES -->
+    </section>
+      <!-- NUESTRAS INSTALACIONES -->
+    <section>  
       <div class="row">
         <h2 class="col-12 text-center pt-50 subtitles subtitles__center"">Nuestras instalaciones</h2>
       </div>
       <!-- CARRUSEL -->
-      <div
-        id="carouselExampleControls"
-        class="container carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block rounded instalaciones__img"
-              src="../assets/consul1.jpeg"
-              alt="Imagen consultorio odontologico"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block rounded instalaciones__img"
-              src="../assets/salaDeEspera.jpeg"
-              alt="Imagen sala de espera"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block rounded instalaciones__img"
-              src="../assets/consul2.jpeg"
-              alt="Imagen consultorio odontologico"
-            />
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      class="d-block rounded instalaciones__img"
+                      src="../assets/consul1.jpeg"
+                      alt="Imagen consultorio odontologico"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block rounded instalaciones__img"
+                      src="../assets/consul3.jpeg"
+                      alt="Consultorio odontologico"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block rounded instalaciones__img"
+                      src="../assets/consul2.jpeg"
+                      alt="Imagen consultorio odontologico"
+                    />
+                  </div>
+                </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span></a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span></a>
+            </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span></a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span></a>
       </div>
-    </div>
-    <footer class="container-fluid d-flex justify-content-around align-items-center footer">
-      <ul class="flex-column align-items-center footer__items">
+    </section>      
+    <footer
+      class="
+        container-fluid
+        d-flex
+        justify-content-around
+        align-items-center
+        footer
+      "
+    >
+      <ul
+        class="
+          flex-column
+          justify-content-center
+          align-items-center
+          footer__items
+        "
+      >
         <li><a href="about.html">Quienes somos</a></li>
         <li><a href="turnos.html">Pedí tu turno</a></li>
         <li><a href="contacto.html">Contactanos</a></li>
